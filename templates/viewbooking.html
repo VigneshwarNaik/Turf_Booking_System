@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>MyBiz Bootstrap Theme</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">  <!-- =======================================================
+    Theme Name: MyBiz
+    Theme URL: https://bootstrapmade.com/mybiz-free-business-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body id="top" data-spy="scroll">
+  <!--top header-->
+
+
+    <!--main-nav-->
+
+    <div id="main-nav">
+
+      <nav class="navbar">
+        <div class="container">
+
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">Turf Booking System </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ftheme">
+              <span class="sr-only">Toggle</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="ftheme">
+
+            <ul class="nav navbar-nav navbar-right">
+            {% include "owner_menu.html" %}
+            </ul>
+
+          </div>
+
+          <div class="search-form">
+            <form>
+              <input type="text" id="s" size="40" placeholder="Search..." />
+            </form>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #00cc99; /* Light gray background color for table headers */
+    }
+
+    td {
+        background-color: #ffffff; /* White background color for table cells */
+    }
+
+
+       #small-footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+  </header>
+
+  <!--slider-->
+
+  <!--about-->
+
+
+    <!--about wrapper left-->
+
+
+        <!--about wrapper right-->
+        <div class="col-xs-12 col-md-7">
+
+
+  <!--about bg-->
+
+
+  <!--service-->
+
+
+    <!--services wrapper-->
+
+
+        <!--Content Column-->
+
+
+    <!--service gapping-->
+
+
+
+
+
+  <!--contact form-->
+  <div id="get-touch">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+          <div class="get-touch-heading">
+            <h2 style="margin-right: 500px; color:lime; white-space: nowrap;">view Booking </h2>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+<table border="1">
+                       <tr>
+<!--                           <th>booking_id </th>-->
+                         <th>truf_id</th>
+                         <th>booking_date </th>
+                         <th>start_time</th>
+                         <th>end_time</th>
+                           <th>type</th>
+
+
+
+                       </tr>
+                       {% for i in userdict %}
+                       <tr>
+
+<!--                          <td>{{i.booking_id }}</td>-->
+                          <td>{{i.truf_id}} </td>
+                          <td>{{i.booking_date}}</td>
+                          <td>{{i.start_time }}</td>
+                           <td>{{i.end_time}}</td>
+                           <td>{{i.type}}</td>
+
+                          
+                       </tr>
+                       {% endfor %}
+                     </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--contact-->
+
+
+
+
+
+  <!--client-->
+<!--  &lt;!&ndash;footer&ndash;&gt;-->
+<!--  <div id="footer">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-heading">-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-heading">-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-heading">-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <!--bottom footer-->
+<!--  <div id="bottom-footer" class="hidden-xs">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-left">-->
+<!--            &copy;  All rights reserved-->
+<!--            <div class="credits">-->
+<!--              &lt;!&ndash;-->
+<!--                All the links in the footer should remain intact.-->
+<!--                You can delete the links only if you purchased the pro version.-->
+<!--                Licensing information: https://bootstrapmade.com/license/-->
+<!--                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyBiz-->
+<!--              &ndash;&gt;-->
+<!--              Designed by <a href="https://bootstrapmade.com/">Vigneshwar & Vasanta</a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<div id="small-footer">
+    &copy; 2023 Turf Booking System. All rights reserved.designed by vigneshwar & vasanta
+</div>
+  <!-- jQuery -->
+          <!-- jQuery -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+  <script src="{% static 'js/jquery.inview.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+  <html>

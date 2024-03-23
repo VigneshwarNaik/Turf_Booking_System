@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>MyBiz Bootstrap Theme</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- =======================================================
+    Theme Name: MyBiz
+    Theme URL: https://bootstrapmade.com/mybiz-free-business-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+  <style>
+    #get-touch {
+  background-image: url("path/to/your/image.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+    .password-toggle {
+      position: relative;
+    }
+
+    .password-toggle input[type="password"] {
+      padding-right: 40px;
+    }
+
+    .password-toggle .toggle-btn {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #777;
+    }
+
+    .password-toggle .toggle-btn:hover {
+      color: #333;
+    }
+
+    #get-touch {
+      background-image: url("path/to/turf-image.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+    }
+
+    #get-touch .get-touch-heading {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    #get-touch .get-touch-heading h2 {
+      color: lime;
+      font-size: 36px;
+    }
+
+    #get-touch .content {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 5px;
+    }
+
+    #get-touch form {
+      margin-top: 20px;
+    }
+
+    #get-touch .form-group {
+      margin-bottom: 20px;
+    }
+
+    #get-touch .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    #get-touch .form-group input[type="text"],
+    #get-touch .form-group input[type="password"] {
+      height: 40px;
+    }
+
+    #get-touch .form-group .toggle-btn {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    #get-touch .form-group .toggle-btn:hover {
+      color: #333;
+    }
+
+    #get-touch .submit button {
+      background-color: #00bcd4;
+      color: #fff;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    #get-touch .submit button:hover {
+      background-color: #0097a7;
+    }
+
+    #get-touch a {
+      display: block;
+      margin-top: 10px;
+      color: #333;
+      text-align: center;
+    }
+
+    #get-touch a:hover {
+      color: #00bcd4;
+    }
+  </style>
+</head>
+
+<body id="top" data-spy="scroll">
+  <!--top header-->
+
+  
+    <!--main-nav-->
+
+    <div id="main-nav">
+
+      <nav class="navbar">
+        <div class="container">
+
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">Turf Booking System </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ftheme">
+              <span class="sr-only">Toggle</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="ftheme">
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="{% url 'index' %}">home</a></li>
+<!--              <li><a href="{% url 'logcheck' %}">logout</a></li>-->
+              <li><a href="{% url 'logcheck' %}">login</a></li>
+<!--              <li><a href="#portfolio"></a></li>-->
+<!--              <li><a href="#contact">contact</a></li>-->
+              
+            </ul>
+
+          </div>
+
+          <div class="search-form">
+            <form>
+              <input type="text" id="s" size="40" placeholder="Search..." />
+            </form>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <!--slider-->
+  
+  <!--about-->
+  
+
+    <!--about wrapper left-->
+   
+
+        <!--about wrapper right-->
+        <div class="col-xs-12 col-md-7">
+          
+
+  <!--about bg-->
+  
+
+  <!--service-->
+  
+
+    <!--services wrapper-->
+    
+
+        <!--Content Column-->
+        
+
+    <!--service gapping-->
+    
+  
+
+  
+
+  <!--contact form-->
+  <div id="get-touch">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        <div class="get-touch-heading" style="text-align: left;">
+          <h2>Registration</h2>
+        </div>
+      </div>
+    </
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+
+          <form  method="post" >
+               {% csrf_token %}
+            <div class="col-md-7">
+              <div class="form-group">
+                <input type="text" name="t1" class="form-control" id="name" placeholder="enter User Id" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+            </div>
+<div class="col-md-7">
+              <div class="form-group">
+                <input type="text" name="t2" class="form-control" id="name" placeholder="enter User Name"  required />
+                <div class="validation"></div>
+
+              </div>
+            </div>
+<div class="col-md-7">
+              <div class="form-group">
+                <input type="text" name="t3" class="form-control" id="name" placeholder="enter password"  required />
+                <div class="validation"></div>
+              </div>
+            </div>
+<div class="col-md-7">
+              <div class="form-group">
+                <input type="text" name="t4" class="form-control" id="email" placeholder="Enter email-ID"  required />
+                <div class="validation"></div>
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <div class="form-group">
+                <input type="text" class="form-control" name="t5" id="name" placeholder="enter phone number" required>
+                <div class="validation"></div>
+              </div>
+            </div>
+<div class="col-md-7">
+            <div class="submit">
+              <button class="btn btn-default" type="submit">register</button>
+            </div>
+<!--              <input type="submit" value="Register">-->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--contact-->
+  
+
+   
+
+
+  <!--client-->
+  <!--footer-->
+<!--  <div id="footer">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-heading">-->
+<!--            -->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-heading">-->
+<!--            -->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-heading">-->
+<!--            -->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <!--bottom footer-->
+  <div id="bottom-footer" class="hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-left">
+            &copy;  All rights reserved
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyBiz
+              -->
+              Designed by <a href="https://bootstrapmade.com/">Vigneshwar & Vasanta</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+  <script src="{% static 'js/jquery.inview.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+</body>
+</html>

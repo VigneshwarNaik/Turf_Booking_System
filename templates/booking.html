@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>MyBiz Bootstrap Theme</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- =======================================================
+    Theme Name: MyBiz
+    Theme URL: https://bootstrapmade.com/mybiz-free-business-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body id="top" data-spy="scroll">
+  <!--top header-->
+
+  
+    <!--main-nav-->
+
+    <div id="main-nav">
+
+      <nav class="navbar">
+        <div class="container">
+
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">Turf Booking System </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ftheme">
+              <span class="sr-only">Toggle</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse" id="ftheme">
+
+            <ul class="nav navbar-nav navbar-right">
+               {% include "user_menu.html" %}
+              
+            </ul>
+
+          </div>
+
+          <div class="search-form">
+            <form>
+              <input type="text" id="s" size="40" placeholder="Search..." />
+            </form>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <!--slider-->
+  
+  <!--about-->
+  
+
+    <!--about wrapper left-->
+   
+
+        <!--about wrapper right-->
+        <div class="col-xs-12 col-md-7">
+          
+
+  <!--about bg-->
+  
+
+  <!--service-->
+  
+
+    <!--services wrapper-->
+    
+
+        <!--Content Column-->
+        
+
+    <!--service gapping-->
+    
+  
+
+  
+
+  <!--contact form-->
+  <div id="get-touch">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+          <div class="get-touch-heading">
+            <h2 style="margin-right: 500px; color:lime;">Booking </h2>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+
+          <form  method="post" >
+            {% csrf_token %}
+            <div class="col-md-7">
+              <div class="form-group">
+<!--                <input type="text" name="t1" class="form-control" id="name" placeholder="enter booking Id" pattern="[0-9]+" title="Please enter numbers only." required/>-->
+                <div class="validation"></div>
+              </div>
+            </div>
+<div class="col-md-7">
+              <div class="form-group">
+                <input type="text" name="t2" class="form-control" id="name" value={{turfid}} placeholder="enter turf id" value = {{iid}} pattern="[0-9]+" title="Please enter numbers only." required />
+                <div class="validation"></div>
+
+              </div>
+            </div>
+<div class="col-md-7">
+              <div class="form-group">
+                <input type="date" name="t3" class="form-control" id="dateInput" placeholder="enter booking" required/>
+                  <script>
+    // Get the date input element
+    var dateInput = document.getElementById("dateInput");
+
+    // Get the current date
+    var currentDate = new Date().toISOString().split("T")[0];
+
+    // Set the minimum value for the date input
+    dateInput.min = currentDate;
+  </script>
+
+                <div class="validation"></div>
+              </div>
+            </div>
+<div class="col-md-7">
+              <div class="form-group">
+                <input type="time" name="t4" class="form-control" id="name" placeholder="Enter Start time" required/>
+                <div class="validation"></div>
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <div class="form-group">
+                <input type="time" class="form-control" name="t5" id="email" placeholder="enter end time" required/>
+                <div class="validation"></div>
+              </div>
+            </div>
+
+             <div class="col-md-7">
+              <div class="form-group">
+<!--                <input type="text"  name="t6" id="email" placeholder="type" required/>-->
+                <select name="t6" class="form-control" required>
+                    <option value="select">select turf</option>
+                    <option value="goal turf">goal turf</option>
+                    <option value="footboll turf">footboll turf</option>
+                    <option value="hockey turf">hockey turf</option>
+                </select>
+                  <div class="validation"></div>
+              </div>
+            </div>
+
+            
+            
+
+            <div class="submit">
+             <input type="submit" value="Book" button class="btn btn-default">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--contact-->
+  
+
+   
+
+
+  <!--client-->
+  <!--footer-->
+<!--  <div id="footer">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-heading">-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-heading">-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="col-md-4">-->
+<!--          <div class="footer-heading">-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash;bottom footer&ndash;&gt;-->
+  <div id="bottom-footer" class="hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-left">
+            &copy;  All rights reserved
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyBiz
+              -->
+              Designed by <a href="https://bootstrapmade.com/">vigneshwar & vasanta</a>
+            </div>
+          </div>
+        </div>
+
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+
+
+  <!-- jQuery -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.flexslider.js' %}"></script>
+  <script src="{% static 'js/jquery.inview.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'contactform/contactform.js' %}"></script>
+
+</body>
+</html>
